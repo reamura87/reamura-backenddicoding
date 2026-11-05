@@ -1,9 +1,11 @@
 import http from 'http';
 import coffee  from './lib/coffee.js';
+import moment from "moment";
 console.log(coffee);
 
 const hostname = process.env.NODE_ENV !== 'production' ? 'localhost' : 'dicoding.com';
 const port = 3000;
+const date = moment().format("MMM Do YY");
 const requestHandler = (req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
@@ -13,6 +15,8 @@ const server = http.createServer(requestHandler);
 server.listen(port, hostname, () => {
   console.log(`Server berjalan pada http://${hostname}:${port}/`);
 });
+
+console.log(date);
 
 const memoryInformation = process.memoryUsage();
  
