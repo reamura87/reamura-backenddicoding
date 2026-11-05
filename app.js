@@ -1,4 +1,7 @@
 import http from 'http';
+import coffee  from './lib/coffee.js';
+console.log(coffee);
+
 const hostname = process.env.NODE_ENV !== 'production' ? 'localhost' : 'dicoding.com';
 const port = 3000;
 const requestHandler = (req, res) => {
