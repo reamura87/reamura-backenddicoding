@@ -1,0 +1,20 @@
+{
+  "name": "dikoding",
+  "version": "1.0.0",
+  "description": "latihan backend",
+  "homepage": "https://github.com/reamura87/reamura-backenddicoding#readme",
+  "bugs": {
+    "url": "https://github.com/reamura87/reamura-backenddicoding/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reamura87/reamura-backenddicoding.git"
+  },
+  "license": "ISC",
+  "author": "reamura",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \\\"Error : no test specified\\\" && exit 1"
+  }
+}
